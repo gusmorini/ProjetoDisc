@@ -1,0 +1,46 @@
+* {
+    text-align: center;
+}
+
+.play {
+    transition: 1s!important;
+    -webkit-animation: rotation 5s infinite linear;
+}
+
+.green {
+    border: 1px solid green;
+    color: green;
+}
+
+.red {
+    border: 1px solid red;
+    color: red;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+#disc {
+    width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+
+#btn {
+    font-size: 20px;
+    padding: 30px;
+    margin: 0px auto;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#btn > span {
+    margin-left: 10px;
+}
