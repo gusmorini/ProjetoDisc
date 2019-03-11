@@ -8,13 +8,13 @@
 }
 
 .green {
-    border: 1px solid green;
-    color: green;
+    background:green;
+    color: white;
 }
 
 .red {
-    border: 1px solid red;
-    color: red;
+    background: red;
+    color: white;
 }
 
 @-webkit-keyframes rotation {
@@ -27,17 +27,18 @@
 }
 
 #disc {
-    width: 600px;
+    width: 400px;
     display: block;
     margin: 20px auto;
 }
 
 #btn {
-    font-size: 20px;
-    padding: 30px;
+    font-size: 15px;
+    padding: 15px;
     margin: 0px auto;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    border: none;
     margin: 0 auto;
 }
 

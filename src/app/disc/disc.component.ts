@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiscComponent implements OnInit {
 
-  private classDisc = 'stop';
-  private classBtn = 'green';
-  private icon = 'fas fa-play';
-  private text = 'Play';
+  private action = false;
 
   constructor() { }
 
@@ -19,17 +16,9 @@ export class DiscComponent implements OnInit {
 
 
   playStop() {
-    if (this.classDisc === 'play') {
-      this.classDisc = null;
-      this.icon = "fas fa-play";
-      this.text = "Play";
-      this.classBtn = 'green';
-    } else {
-      this.classDisc = 'play';
-      this.icon = "fas fa-stop";
-      this.text = "Stop";
-      this.classBtn = 'red';
-    }
+
+    this.action = !this.action;
+
   }
 
 }

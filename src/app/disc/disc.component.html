@@ -3,13 +3,13 @@
 
 <p>
 
-  <img id="disc" src="./assets/disc.png" alt="" class="{{classDisc}}">
+  <img id="disc" src="./assets/disc.png" alt="" class="{{ action? 'play' : null }}">
 
-  <button id="btn" (click)="playStop()" class="{{classBtn}}">
+  <button id="btn" (click)="playStop()" class="{{ action? 'red' : 'green' }}">
 
-    <i class="{{icon}}"></i>
+    <i class="{{ action ? 'fas fa-stop' : 'fas fa-play' }}"></i>
 
-    <span>{{text}}</span>
+    <span>{{ action ? 'Stop' : 'Play' }}</span>
 
   </button>
 
